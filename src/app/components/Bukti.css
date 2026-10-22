@@ -1,0 +1,53 @@
+.bukti {
+  padding: 48px 0 0;
+  text-align: center;
+}
+.bukti-angka {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.bukti-angka b {
+  display: block;
+  font:
+    900 clamp(32px, 4vw, 48px) var(--font-judul),
+    sans-serif;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.bukti-angka span {
+  color: var(--abu);
+  font-size: 15px;
+}
+.bukti-judul {
+  margin-top: 32px;
+  font-weight: 700;
+  color: var(--abu);
+}
+.bukti-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.bukti-logo span {
+  background: #fff;
+  padding: 9px 18px;
+  border-radius: 99px;
+  font:
+    800 15px var(--font-judul),
+    sans-serif;
+  box-shadow: 0 8px 20px -14px rgba(27, 23, 64, 0.5);
+}
+.bukti-catatan {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--abu);
+}
+@media (max-width: 700px) {
+  .bukti-angka {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 12px;
+  }
+}

@@ -1,0 +1,56 @@
+.langkah {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.langkah-kartu {
+  border-radius: 32px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.langkah-no {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aksen);
+  color: #fff;
+  font:
+    800 22px var(--font-judul),
+    sans-serif;
+}
+.langkah-kartu h3 {
+  font-size: 27px;
+}
+.langkah-kartu p {
+  color: #433f66;
+}
+.langkah-chip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+.langkah-chip span {
+  background: #fff;
+  font:
+    700 13px var(--font-judul),
+    sans-serif;
+  padding: 6px 14px;
+  border-radius: 99px;
+}
+.langkah-catatan {
+  text-align: center;
+  margin-top: 28px;
+  color: var(--abu);
+  font-size: 15px;
+}
+@media (max-width: 860px) {
+  .langkah {
+    grid-template-columns: 1fr;
+  }
+}

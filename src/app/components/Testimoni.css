@@ -1,0 +1,67 @@
+.testi {
+  background: var(--lilac);
+  border-radius: 48px;
+  margin: 0 16px;
+}
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.testi-kartu {
+  margin: 0;
+  background: #fff;
+  border-radius: 28px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+.testi-kartu blockquote {
+  margin: 0;
+  font:
+    700 20px/1.4 var(--font-judul),
+    sans-serif;
+  letter-spacing: -0.01em;
+}
+.testi-kartu figcaption {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--utama);
+  font:
+    800 17px var(--font-judul),
+    sans-serif;
+  flex: none;
+}
+.testi-kartu b,
+.testi-kartu small {
+  display: block;
+}
+.testi-kartu small {
+  color: var(--abu);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.testi-catatan {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--abu);
+  font-size: 14px;
+}
+@media (max-width: 860px) {
+  .testi {
+    border-radius: 32px;
+  }
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+}

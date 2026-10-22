@@ -1,0 +1,98 @@
+.harga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+.harga-kartu {
+  position: relative;
+  background: #fff;
+  border-radius: 32px;
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 20px 40px -28px rgba(27, 23, 64, 0.5);
+}
+.harga-kartu.populer {
+  background: var(--aksen);
+  color: #fff;
+}
+.harga-lencana {
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: var(--utama);
+  color: var(--aksen);
+  font:
+    800 13px var(--font-judul),
+    sans-serif;
+  padding: 6px 14px;
+  border-radius: 99px;
+}
+.harga-kartu h3 {
+  font-size: 30px;
+}
+.harga-kartu small {
+  color: var(--abu);
+}
+.populer small,
+.populer .harga-teks,
+.populer .harga-angka span {
+  color: #cfcbe8;
+}
+.harga-angka {
+  font:
+    900 38px var(--font-judul),
+    sans-serif;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.harga-angka span {
+  font:
+    500 14px var(--font-body),
+    sans-serif;
+  color: var(--abu);
+  margin-left: 6px;
+  letter-spacing: 0;
+}
+.harga-teks {
+  color: var(--abu);
+  font-size: 15.5px;
+}
+.harga-kartu ul {
+  list-style: none;
+  margin: 6px 0 14px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  flex: 1;
+}
+.harga-kartu li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: 500;
+}
+.harga-kartu li svg {
+  flex: none;
+  margin-top: 4px;
+  color: var(--ok);
+}
+.populer li svg {
+  color: var(--utama);
+}
+.harga-kartu .btn {
+  justify-content: center;
+}
+.harga-catatan {
+  text-align: center;
+  margin-top: 28px;
+  color: var(--abu);
+  font-size: 14px;
+}
+@media (max-width: 860px) {
+  .harga-grid {
+    grid-template-columns: 1fr;
+  }
+}

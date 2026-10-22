@@ -1,0 +1,30 @@
+.wa {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--utama);
+  color: var(--aksen);
+  padding: 14px 22px;
+  border-radius: 99px;
+  font:
+    800 16px var(--font-judul),
+    sans-serif;
+  text-decoration: none;
+  box-shadow: 0 14px 30px -10px rgba(27, 23, 64, 0.55);
+  transition: transform 0.2s;
+}
+.wa:hover {
+  transform: translateY(-3px);
+}
+@media (max-width: 560px) {
+  .wa span {
+    display: none;
+  }
+  .wa {
+    padding: 16px;
+  }
+}
