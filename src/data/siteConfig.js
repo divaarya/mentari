@@ -18,6 +18,6 @@ export const siteConfig = {
       "Mentari - HRIS untuk Sekolah: Absensi Guru, Honor, Ujian, Library, Perizinan",
     metaDescription:
       "Absensi guru dengan selfie dan GPS, honor per jam mengajar, ujian online, perpustakaan, dan perizinan dalam satu aplikasi sekolah.",
-    ogImage: "",
+    ogImage: "/mentari.png",
   },
 };
